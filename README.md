@@ -4,6 +4,21 @@ Kafka testing
 Build kafka cluster using docker compose
 https://www.baeldung.com/ops/kafka-docker-setup
 
+
+## Run Kafka and Zookeper
+
+Download docker-compose.yml, and correct IPs/Names of hosts and run it
+
+`docker-compose up -d`
+
+to close use
+
+`docker-compose down`
+
+
+
+## Run test
+
 Create Topic
 
 `docker exec -it ubuntu_kafka_1 kafka-topics --create --topic quickstart-events --bootstrap-server 10.1.1.249:19092`
